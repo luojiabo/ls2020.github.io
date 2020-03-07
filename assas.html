@@ -1,0 +1,6 @@
+  //转向看着一个点
+    void TurnToTargetPosition(Vector3 point)
+    {
+        targetPosition = new Vector3(point.x, transform.position.y, point.z);
+        transform.LookAt(targetPosition);
+    }
